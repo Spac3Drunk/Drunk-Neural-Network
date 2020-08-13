@@ -1,0 +1,256 @@
+d² = x² + y²
+
+
+
+0 = (x-x0)² + (y-y0)² - d²
+0 = x*a + b - y
+
+
+0 = (x-x0)² + (x*a + b-y0)² - d²
+y = x*a + b
+
+d² = (x-x0)² + (x*a + b-y0)²
+d² = x²-x0² + (x*a)² + x*a * (b-y0) * 2 + (b-y0)²
+d² + x0² - b² + y0² = x² + x²*a² + x*a*(b-y0)*2
+//Erreur
+0 = x² + x²*a² + x*a*(b-y0)*2 - d² + x0² - b² + y0²
+
+
+
+D = b² - 4*a*c
+
+D = (a*(b-y0)*2)² - 4*a*(d² + x0² - b² + y0²)
+
+
+x1 = (-a*(b-y0)*2 - D**0.5) / 2*a
+x1 = (-a*(b-y0)*2 + D**0.5) / 2*a
+
+x*a + b - y = (x-x0)² + ((y-y0)²) - d²
+
+
+
+
+
+0 = (x-x0)² + (y-y0)² - d²
+x = t*r1 + x1
+y = t*r2 + y1
+
+
+0 = (t*r1 + x1-x0)² + (t*r2 + y1-y0)² - d²
+
+d² = (t*r1 + x1-x0)² + (t*r2 + y1-y0)²
+
+d² = (t*r1)² + t*r1*2*(x1-x0) + (x1-x0)² + (t*r2)² + t*r2*2*(y1-y0) + (y1-y0)²
+
+d² = t²*r1² + t*r1*2*(x1-x0) + (x1-x0)² + t²*r2² + t*r2*2*(y1-y0) + (y1-y0)²
+
+d² - (x1-x0)² - (y1-y0)² = t²*r1² + t²*r2² + t*r1*2*(x1-x0) + t*r2*2*(y1-y0)
+
+0 = (r1² + r2²) * t² + ((r1*(x1-x0) + r2*(y1-y0))*2) * t - (d² - (x1-x0)² - (y1-y0)²)
+
+
+D = ((r1*(x1-x0) + r2*(y1-y0))*2)² - 4*(r1² + r2²)* (-(d² - (x1-x0)² - (y1-y0)²))
+
+t1 = (-b-D**0.5) / 2a
+t2 = (-b+D**0.5) / 2a
+
+
+
+//test
+
+0 = (r1² + r2²) * t² + ((r1*(
+x1-x0) + r2*(y1-y0))*2) * t - (d² - (x1-x0)² - (y1-y0)²)
+
+a = (r1² + r2²) = 2² + 1²
+b = ((r1*(x1-x0) + r2*(y1-y0))*2) = ((2*(-10) + 1*(-8))*2)
+c = - (d² - (x1-x0)² - (y1-y0)²) = - (10² - (-10)² - (-8-)²)
+
+D = ((r1*(x1-x0)+r2*(y1-y0))*2)² - 4*(r1²+r2²)*(-(d²-(x1-x0)²-(y1-y0)²))
+
+D = b² - 4ac = 56² - 4*5*64
+
+t1 = 9.9081318457076
+t2 = 1.2918681542924
+
+
+x = t*r1 + x1
+y = t*r2 + y1
+
+
+
+
+//droite
+
+
+x = t1*rx1 + x1
+y = t1*ry1 + y1
+x = t2*rx2 + x2
+y = t2*ry2 + y2
+
+
+t2*rx2 + x2 = t1*rx1 + x1
+t2*ry2 + y2 = t1*ry1 + y1
+
+
+
+t2*rx2 + x2 = t1*rx1 + x1
+(t2*ry2 + y2 - y1) / ry1 = t1
+
+t2*rx2 + x2 = ((t2*ry2 + y2 - y1) / ry1)*rx1 + x1
+
+t2*rx2 + x2 = ((t2*ry2 + y2 - y1) / ry1)*rx1 + x1
+
+t2*rx2 + x2 = t2*ry2/ry1*rx1 + y2/ry1*rx1 - y1/ry1*rx1 + x1
+
+t2*rx2 - t2*ry2/ry1*rx1 = y2/ry1*rx1 - y1/ry1*rx1 + x1 - x2
+
+t2*rx2 - t2*ry2/ry1*rx1 = y2/ry1*rx1 - y1/ry1*rx1 + x1 - x2
+
+(rx2 - ry2/ry1*rx1)*t2 = y2/ry1*rx1 - y1/ry1*rx1 + x1 - x2
+
+t2 = (y2/ry1*rx1 - y1/ry1*rx1 + x1 - x2) / (rx2 - ry2/ry1*rx1)
+
+
+t2 = (y2/ry1*rx1-y1/ry1*rx1+x1-x2) / (rx2-ry2/ry1*rx1)
+
+t2 = ((vb - va)/rva*rca + ca - cb) / (rcb-rvb/rva*rca)
+
+
+t2 = ((vb - va)/rva*rca)/(rcb-rvb/rva*rca) + (ca - cb)/(rcb-rvb/rva*rca)
+
+
+
+(rx2 - ry2/ry1*rx1)*t2 = y2/ry1*rx1 - y1/ry1*rx1 + x1 - x2
+
+
+//test
+
+rx1 = 2
+x1 = -10
+ry1 = 1
+y1 = -8
+
+rx2 = -3
+x2 = -10
+ry2 = -3
+y2 = 6
+
+rca = 2
+ca = -10
+rva = 1
+va = -8
+
+rcb = -3
+cb = -10
+rvb = -3
+vb = 6
+
+t2 = (y2/ry1*rx1-y1/ry1*rx1+x1-x2) / (rx2-ry2/ry1*rx1)
+t2 = (vb)
+
+
+t2 = (y2/ry1*rx1-y1/ry1*rx1+x1-x2) / (rx2-ry2/ry1*rx1)
+t2 = (6/1*2--8/1*2+-10--10) / (-3--3/1*2)
+
+
+////////////////
+
+D1
+x = t1*rx1 + x1
+y = t1*ry1 + y1
+
+D2
+x = t2*rx2 + x2
+y = t2*ry2 + y2
+
+
+t1*rx1 + x1 = t2*rx2 + x2
+t1*ry1 + y1 = t2*ry2 + y2
+
+
+t1 = (t2*ry2 + y2 - y1)/ry1
+
+
+t1 = (t2*ry2 + y2 - y1)/ry1
+
+(t2*ry2 + y2 - y1)/ry1*rx1 + x1 = t2*rx2 + x2
+
+
+(t2*ry2)/ry1*rx1 + (y2 - y1)/ry1*rx1 + x1 = t2*rx2 + x2
+
+
+(y2 - y1)/ry1*rx1 + x1 = t2*rx2 + x2 - t2*ry2/ry1*rx1
+
+
+(y2 - y1)/ry1*rx1 + x1 - x2 = (rx2 - ry2/ry1*rx1)*t2
+
+
+((y2 - y1)/ry1*rx1 + x1 - x2) / (rx2 - ry2/ry1*rx1) = t2
+
+
+((y2 - y1)/ry1*rx1 + x1 - x2) / (rx2 - ry2/ry1*rx1) = t2 // don't work if rx2 == (ry2/ry1*rx1) || ry1 == 0 || rx1 == 0
+
+if rx2 == (ry2/ry1*rx1) => no intersect ?
+
+
+((y2 - y1)/ry1*rx1 + x1 - x2) / (rx2 - ry2/ry1*rx1) = t2 // don't work if rx2 == (ry2/ry1*rx1) || ry1 == 0 || rx1 == 0
+((y1 - y2)/ry2*rx2 + x2 - x1) / (rx1 - ry1/ry2*rx2) = t1 // don't work if rx2 == (ry1/ry2*rx2) || ry2 == 0 || rx2 == 0
+
+((y2-y1)/ry1*rx1+x1-x2)/(rx2-ry2/ry1*rx1) = t2 // don't work if rx2 == (ry2/ry1*rx1) || ry1 == 0 || rx1 == 0
+((y1-y2)/ry2*rx2+x2-x1)/(rx1-ry1/ry2*rx2) = t1 // don't work if rx2 == (ry1/ry2*rx2) || ry2 == 0 || rx2 == 0
+
+
+
+
+x1 = x(A)
+rx1 = (x(B) - x(A))
+y1 = y(A)
+ry1 = (y(B) - y(A))
+
+x2 = x(C)
+rx2 = (x(D) - x(C))
+y2 = y(C)
+ry2 = (y(D) - y(C))
+
+
+
+
+t2 = ((y(C) - y(A))/(y(B) - y(A))*(x(B) - x(A)) + x(A) - x(C)) / ((x(D) - x(C)) - (y(D) - y(C))/(y(B) - y(A))*(x(B) - x(A)))
+t1 = ((y(A) - y(C))/(y(D) - y(C))*(x(D) - x(C)) + x(C) - x(A)) / ((x(B) - x(A)) - (y(B) - y(A))/(y(D) - y(C))*(x(D) - x(C)))
+
+
+S1 = (x(A) + (x(B) - x(A))*t1, y(A) + (y(B) - y(A))*t1)
+S2 = (x(C) + (x(D) - x(C))*t2, y(C) + (y(D) - y(C))*t2)
+
+x(A) a
+y(A) b
+x(B) c
+y(B) d
+x(C) e
+y(C) f
+x(D) g
+y(D) h
+
+
+
+t1 = ((y(A) - y(C))/(y(D) - y(C))*(x(D) - x(C)) + x(C) - x(A)) / ((x(B) - x(A)) - (y(B) - y(A))/(y(D) - y(C))*(x(D) - x(C)))
+t1 = ((b    - f   )/(h    - f   )*(g    - e   ) + e    - a   ) / ((c    - a   ) - (d    - b   )/(h    - f   )*(g    - e   ))
+
+t = (a*(f-h)+b*(g-e)+e*h-f*g)/((a-c)*(f-h)-(b-d)*(e-g))
+
+x(A) a
+y(A) b
+x(B) c
+y(B) d
+x(C) e
+y(C) f
+x(D) g
+y(D) h
+
+t = (a   *(f   -h   )+b   *(g   -e   )+e   *h   +f   *g   )/((a   -c   )*(f   -h   )-(b   -d   )*(e   -g   ))
+t = (x(A)*(y(C)-y(D))+y(A)*(x(D)-x(C))+x(C)*y(D)-y(C)*x(D))/((x(A)-x(B))*(y(C)-y(D))-(y(A)-y(B))*(x(C)-x(D)))
+t = (x1*(ry2)+y1*(rx2)+x2*y(D)-y2*x(D))/((rx1)*(ry2)-(ry1)*(rx2)
+t = (x1*(ry2)+y1*(rx2)+x2*(y2 + ry2)-y2*(x2 + rx2))/((rx1)*(ry2)-(ry1)*(rx2)
+
+
+S = (x(A) + (x(B) - x(A))*t, y(A) + (y(B) - y(A))*t)
